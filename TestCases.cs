@@ -120,5 +120,13 @@ public class TestCases
         Console.WriteLine("==== Test Case 5 ====");
         // Performance tests to calculate speed of each main function's execution.
         PerformanceMeasurement.MeasurePerformance();
+
+        // Based on the performance measurements provided it is clear to see that the Enqueue and Peek functions perform at an O(1)
+        // complexity because it's speed it takes to execute doesn't change hardly ever as the size of the input increases.
+        //
+        // The Contains and Dequeue functions apear to be O(n) complexity because as the size of the input increases there is a steady increase
+        // in time it takes to complete the task. Its obvious that there are loops that iterate through the entire queue list within 
+        // the Dequeue function and the Contains function uses loops in an algorithmic fashion to locate the item more efficiently
+        // but still in an O(n) complexity because as the input get into the higher ranges the function begins to take more time to execute.
     }
 }
