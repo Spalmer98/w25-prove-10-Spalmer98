@@ -17,6 +17,7 @@ public class LQueue<T>
     // Add an item to a Queue and increment the value of _size by one to account for the addition of an item to the queue 
     public void Enqueue (T item)
     {
+        // Adds the item into the back of the queue list.
         _queue.Add(item);
         _size++;
     }
