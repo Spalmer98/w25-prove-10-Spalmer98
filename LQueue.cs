@@ -25,7 +25,7 @@ public class LQueue<T> where T: new()
     public T Dequeue() 
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
-        if (_size == 0)
+        if (IsEmpty())
         {
             throw new Exception("Queue is empty.");
         }
@@ -44,7 +44,7 @@ public class LQueue<T> where T: new()
     public T Peek()
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
-        if (_size == 0)
+        if (IsEmpty())
         {
             throw new Exception("Queue is empty.");
         }
@@ -64,21 +64,18 @@ public class LQueue<T> where T: new()
         return results;
     }
 
-    // Gets all items from the queue fron front to back.
-    public void ToString()
+    // Convert an item in the queue into a string that can be displayed to the console.
+    public String ToString(int i)
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
-        if(_size == 0)
+        if(_queue[i] == null)
         {
-            Console.WriteLine("Queue is empty.");
+            throw new Exception("_queue contains null");
         }
         else
         {
-            // Loop through every item in the queue starting from the front and ending at the back.
-            for(int i = 0; i < _size; i++)
-            {
-                Console.WriteLine(_queue[i]);
-            }
+            // Return the item in the queue based on index location and convert it to a string.
+            return $"{_queue[i]}";
         }
     }
 
