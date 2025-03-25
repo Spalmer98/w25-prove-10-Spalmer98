@@ -22,13 +22,12 @@ public class LQueue<T> where T: new()
     }
 
     // Removes an item from the queue and returns the value of the removed item.
-    public object Dequeue() 
+    public T Dequeue() 
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
         if (_size == 0)
         {
-            Console.WriteLine("Queue is empty.");
-            return null;
+            throw new Exception("Queue is empty.");
         }
         else
         {
@@ -41,27 +40,13 @@ public class LQueue<T> where T: new()
         }
     }
 
-    public void DequeueAll()
-    {
-        if (_size != 0)
-        {
-            _queue.RemoveRange(0, _size);
-            _size = 0;
-        }
-        else
-        {
-            Console.WriteLine("Queue is empty.");
-        }
-    }
-
     // Looks at the item at the front of the queue.
-    public object Peek()
+    public T Peek()
     {
-        // If the _front variable and _rear variable are the same that means the queue is empty so throw an exception to the terminal.
+        // If the _size is zero that means the queue is empty so throw an exception to the terminal.
         if (_size == 0)
         {
-            Console.WriteLine("Queue is empty.");
-            return null;
+            throw new Exception("Queue is empty.");
         }
         else
         {
@@ -80,7 +65,7 @@ public class LQueue<T> where T: new()
     }
 
     // Gets all items from the queue fron front to back.
-    public void GetItem()
+    public void ToString()
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
         if(_size == 0)
@@ -92,7 +77,7 @@ public class LQueue<T> where T: new()
             // Loop through every item in the queue starting from the front and ending at the back.
             for(int i = 0; i < _size; i++)
             {
-                    Console.WriteLine(_queue[i]);
+                Console.WriteLine(_queue[i]);
             }
         }
     }

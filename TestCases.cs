@@ -20,7 +20,7 @@ public class TestCases
 
         Console.WriteLine($"Size: {item.Size()}");
 
-        item.GetItem();
+        item.ToString();
         // Expected output:
         // Size: 5
         // 1
@@ -38,14 +38,22 @@ public class TestCases
         item.Enqueue(7);
         item.Enqueue(9);
 
-        item.GetItem();
+        item.ToString();
 
         Console.WriteLine(item.Dequeue());
         item.Dequeue();
         Console.WriteLine(item.Dequeue());
         item.Dequeue();
         Console.WriteLine(item.Dequeue());
-        Console.WriteLine(item.Dequeue());
+        try
+        {
+            Console.WriteLine(item.Dequeue());
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+            
         // Expected output:
         // 1
         // 3
@@ -65,13 +73,23 @@ public class TestCases
         item.Enqueue(5);
         item.Enqueue(7);
         item.Enqueue(9);
-        item.GetItem();
+        item.ToString();
         Console.WriteLine(item.Peek());
         item.Dequeue();
         item.Dequeue();
         Console.WriteLine(item.Peek());
-        item.DequeueAll();
-        Console.WriteLine(item.Peek());
+        for(int i = 0; i < item.Size(); i++)
+        {
+            item.Dequeue();
+        }
+        try
+        {
+            Console.WriteLine(item.Peek());
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
         // Expected output:
         // 1
         // 3
@@ -89,7 +107,7 @@ public class TestCases
         item.Enqueue(7);
         item.Enqueue(6);
         item.Enqueue(9);
-        item.GetItem();
+        item.ToString();
 
         Console.WriteLine(item.Contains(4));
         Console.WriteLine(item.Contains(7));
