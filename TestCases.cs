@@ -20,7 +20,7 @@ public class TestCases
         Console.WriteLine($"Size: {item.Size()}");
         for(int i = 0; i < item.Size(); i++)
         {
-            Console.WriteLine(item.ToString(i));
+            Console.WriteLine(item.toString(i));
         }
         // Expected output:
         // Size: 5
@@ -61,15 +61,16 @@ public class TestCases
         item.Enqueue(9);
         item.Enqueue(3);
         item.Enqueue(7);
+        Console.WriteLine($"Size: {item.Size()}");
         for(int i = 0; i < item.Size(); i++)
         {
-            Console.WriteLine(item.ToString(i));
+            Console.WriteLine(item.toString(i));
         }
         Console.WriteLine(item.Peek());
         item.Dequeue();
         item.Dequeue();
         Console.WriteLine(item.Peek());
-        for(int i = 0; i < item.Size() + 1; i++)
+        while(item.Size() != 0)
         {
             item.Dequeue();
         }
@@ -82,6 +83,7 @@ public class TestCases
             Console.WriteLine(e.Message);
         }
         // Expected output:
+        // Size: 5
         // 1
         // 5
         // 9
@@ -94,12 +96,12 @@ public class TestCases
         Console.WriteLine("==== Test Case 4 ====");
         // Add items to queue and display all the items in the queue, then check to see if the queue contains specific items. 
         // Remove one of the items from the queue and check for it again.
-        item.Enqueue(9);
         item.Enqueue(3);
+        item.Enqueue(9);
         item.Enqueue(7);
         for(int i = 0; i < item.Size(); i++)
         {
-            Console.WriteLine(item.ToString(i));
+            Console.WriteLine(item.toString(i));
         }
         Console.WriteLine(item.Contains(4));
         Console.WriteLine(item.Contains(7));
@@ -107,8 +109,8 @@ public class TestCases
         item.Dequeue();
         Console.WriteLine(item.Contains(3));
         // Expected output:
-        // 9
         // 3
+        // 9
         // 7
         // False
         // True

@@ -1,8 +1,8 @@
 namespace prove_10;
 
-public class LQueue<T> where T: new()
+public class LQueue<T>
 {
-    // Create Variable
+    // Create List and Variables to be used throughout functions in the class
     private List<T> _queue = new List<T>();
     private int _size;
     private int _capacity;
@@ -14,14 +14,17 @@ public class LQueue<T> where T: new()
         _capacity = capacity;
     }
     
-    // Add item to Queue
+    // Add an item to a Queue and increment the value of _size by one to account for the addition of an item to the queue 
     public void Enqueue (T item)
     {
         _queue.Add(item);
         _size++;
     }
 
-    // Removes an item from the queue and returns the value of the removed item.
+    // Removes an item from the queue and returns the value of the removed item. Reduce the value of _size by one to account for
+    // the item being removed from the queue therefore the queue size is smaller. Using the RemoveAt() function built into the
+    // List<> library we can remove the first item in the queue and have everything moved forward one position in the List<>
+    // making the item in index 1 now be in index 0 position.
     public T Dequeue() 
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
@@ -40,7 +43,7 @@ public class LQueue<T> where T: new()
         }
     }
 
-    // Looks at the item at the front of the queue.
+    // Looks at the item at the front of the queue and return it.
     public T Peek()
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
@@ -55,17 +58,14 @@ public class LQueue<T> where T: new()
         }
     }
 
-    // Check to see if the queue contains a certain item then return it.
+    // Check to see if the queue contains a certain item then return with a True or False.
     public bool Contains(T item)
     {
-        bool results = false;
-        if (_queue.Contains(item))
-            results = true;
-        return results;
+        return _queue.Contains(item);
     }
 
     // Convert an item in the queue into a string that can be displayed to the console.
-    public String ToString(int i)
+    public String toString(int i)
     {
         // If the _size is zero that means the queue is empty so throw an exception to the terminal.
         if(_queue[i] == null)
@@ -91,6 +91,7 @@ public class LQueue<T> where T: new()
         return _size;
     }
 
+    // Get the value from _capacity variable.
     public int Capacity()
     {
         return _capacity;
