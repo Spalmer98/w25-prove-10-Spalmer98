@@ -1,0 +1,15 @@
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/bin/Debug/net8.0/prove-12
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/bin/Debug/net8.0/prove-12.deps.json
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/bin/Debug/net8.0/prove-12.runtimeconfig.json
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/bin/Debug/net8.0/prove-12.dll
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/bin/Debug/net8.0/prove-12.pdb
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.GeneratedMSBuildEditorConfig.editorconfig
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.AssemblyInfoInputs.cache
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.AssemblyInfo.cs
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.csproj.CoreCompileInputs.cache
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.sourcelink.json
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.dll
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/refint/prove-12.dll
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.pdb
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/prove-12.genruntimeconfig.cache
+/Users/monkies989/Library/CloudStorage/OneDrive-Personal/_BYU-I Classes/_Winter 2025/CSE 212 Programming with Data Structures/w25-prove-12-Spalmer98/obj/Debug/net8.0/ref/prove-12.dll
